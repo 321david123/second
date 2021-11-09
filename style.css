@@ -1,6 +1,7 @@
 :root {
     --primary-color: #85E3FF;
-    --secunday-color: #D73530;
+    --secondary-color: #ffdae0;
+    --tertiary-color: ;
 }
 
 * {
@@ -32,8 +33,19 @@ li {
     list-style: none;
     display: inline-block;
     padding-right: 2rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
 }
 a:hover {
     color: #22229a;
+}
+body {
+    background-color: #ffdae0;
+}
+.mid-text {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 2.2rem;
+    margin-bottom: 150px;
+    font-family: 'Mohave', sans-serif;
 }
