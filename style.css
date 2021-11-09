@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #85E3FF;
+    --secunday-color: #D73530;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,11 +16,12 @@ html {
 }
 .contenedor {
     align-items: center;
-    background-color: lightblue;
+    background-color: #85E3FF;
     display: flex;
     height: 60px;
     justify-content: space-between;
     padding: 20px;
+    border-bottom: 1px solid gray;
 }
 .links {
     list-style: none;
@@ -27,4 +33,7 @@ li {
     display: inline-block;
     padding-right: 2rem;
     font-size: 1.7rem;
+}
+a:hover {
+    color: #22229a;
 }
