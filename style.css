@@ -1,6 +1,6 @@
 :root {
     --primary-color: #d2f8d2;
-    --secondary-color: #85E3FF;
+    --secondary-color: #dbdbdb;
     --tertiary-color: ;
 }
 * {
@@ -16,7 +16,7 @@ html {
 }
 .contenedor {
     align-items: center;
-    background-color: #85E3FF;
+    background-color: #d2f8f8;
     display: flex;
     height: 60px;
     justify-content: space-between;
@@ -36,7 +36,7 @@ li {
     font-family: sans-serif;
 }
 a:hover {
-    color: #22229a;
+    color: #43dede;
 }
 body {
     background-color: #d2f8d2;

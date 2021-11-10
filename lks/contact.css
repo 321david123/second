@@ -1,13 +1,18 @@
+:root {
+    --primary-color: #d2f8d2;
+    --secondary-color: #dbdbdb;
+    --tertiary-color: ;
+}
 body {
     margin: 200px auto;
     text-align: center;
-    background-color:  hsl(91, 64%, 49%);
+    background-color:  var(--primary-color);
 }
 p {
     font-size: 1.2rem;
 }
 #movimiento {
-    background-color: hsl(91, 64%, 49%);
+    background-color: var(--primary-color);
     animation-name: cuadrado;
     animation-duration: 6s;
     animation-delay: .5s;
@@ -17,8 +22,8 @@ p {
 }
 @keyframes cuadrado {
     0% {left: 0;top: 0;}
-    25% {background-color: rgb(53, 212, 14);}
-    50% {background-color: rgb(32, 218, 15);}
-    75% {background-color: rgb(25, 206, 49);top: 150px;}
-    100% {background-color: hsl(91, 64%, 49%);left:0;top:0;}
+    25% {background-color: var(--primary-color);}
+    50% {background-color: #d2f8f8;}
+    75% {background-color: #d2f8f8;top: 150px;}
+    100% {background-color: var(--primary-color);left:0;top:0;}
 }
