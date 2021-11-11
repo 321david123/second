@@ -78,11 +78,26 @@ p {
     animation-duration: 2s;
 }
 @keyframes Animation{
-    from{
+    from {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
     }
      to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+/* animation of the text */
+.Animation-text {
+    animation-name: Animation-text;
+    animation-duration: 1.8s;
+}
+@keyframes Animation-text {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -6%, 0);
+    }  
+    to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
