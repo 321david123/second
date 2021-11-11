@@ -53,8 +53,8 @@ h1 {
     padding: 20px 0;
     border-radius: 70px; 
 }
-.box-text {
-    margin: 5% 30%;
+.box {
+    margin: 5% 25%;
     text-align: justify;
     font-size: 2rem;
 }
@@ -75,10 +75,7 @@ p {
 /* aminaciones */
 .Animation{
     animation-name: Animation;
-    -webkit-animation-name: Animation;
     animation-duration: 2s;
-    animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
 }
 @keyframes Animation{
     from{
