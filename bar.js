@@ -8,6 +8,7 @@ let processSroll = () => {
         // console.log(scrollPercent);
 
         document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
+        document.getElementById('holap').style.setProperty('--scrollAmount', scrollPercent);
 }
 
 document.addEventListener('scroll', processSroll);
