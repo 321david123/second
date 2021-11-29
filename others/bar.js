@@ -10,4 +10,4 @@ let processSroll = () => {
         document.getElementById('progress-bar').style.setProperty('--scrollAmount', scrollPercent);
 }
 
-document.addEventListener('scroll', processSroll);
+document.addEventListener('scroll', processSroll); 
