@@ -12,14 +12,16 @@ html {
   font-size: 62.5%;
 }
 .logo {
-  font-size: 3rem;
-  align-items: center;
-  list-style: none;
-  color: black;
-  text-decoration: none;
-  font-family: 'Praise', cursive;
-  padding-left: 15px;
-  padding-right: 10px;
+  font-size: 3rem !important;
+  align-items: center !important;
+  list-style: none !important;
+  color: black !important;
+  text-decoration: none !important;
+  font-family: 'Praise', cursive !important;
+  padding-left: 15px !important;
+  padding-right: 10px !important;
+  text-decoration: none !important;
+  border: none !important;
 }
 .contenedor {
   align-items: center;
@@ -29,6 +31,8 @@ html {
   justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid gray;
+  position: sticky;
+  top: 0px;
 }
 .links {
   list-style: none;
@@ -58,20 +62,45 @@ h1 {
 }
 .img {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 7px 0;
 }
 .img-box {
   text-align: center;
 }
 .box {
-  margin: 5% 10%;
+  margin: 5% 2%;
+  display: flex;
   text-align: justify;
   font-size: 1.5rem;
 }
+img{
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.news{
+  padding-left: 10%;
+  padding-top: 5%;
+  text-decoration: underline;
+}
+.new{
+  text-decoration: underline;
+  padding-top: 17%;
+  padding-left: 10px;
+}
+.ne{
+  text-decoration: underline;
+  padding-top: 30%;
+}
+.titulo{
+  font-size: 4rem;
+}
 p {
   padding-bottom: 10px;
+  font-size: 2rem;
   font-family: "Merriweather", serif;
+  text-align: center;
 }
 .text-near-to-img {
     padding-bottom: 3px;
@@ -86,12 +115,11 @@ p {
   position: fixed;
   top: 0;
 }
-/* aminaciones */
-.Animation {
-  animation-name: Animation;
+.animacion {
+  animation-name: animacion;
   animation-duration: 2s;
 }
-@keyframes Animation {
+@keyframes animacion {
   from {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
@@ -102,11 +130,11 @@ p {
   }
 }
 /* animation of the text */
-.Animation-text {
-  animation-name: Animation-text;
+.animacion2 {
+  animation-name: animation2;
   animation-duration: 1.8s;
 }
-@keyframes Animation-text {
+@keyframes animacion2 {
   from {
     opacity: 0;
     transform: translate3d(0, -5%, 0);
@@ -119,25 +147,11 @@ p {
   }
 }
 
-/* this is just a demo */
-/* .prueba {
-    animation-name: XD;
-    animation-duration: 3s;
-}
-    @keyframes prueba {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    } */
-    
-.final {
+/* .final {
     background-color: #ffff10;
     width: 100%;
     height: 5px;
-}
+} */
 /* @media (min-width: 480px) {
     h1 {
         font-size: 2.3rem;
@@ -176,3 +190,218 @@ p {
         padding-bottom: 10px;
     }
   } */
+
+
+
+
+
+
+
+
+
+  .logo {
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    border-right: none;
+    border-bottom: black solid 1px;
+    margin-left: 10px;
+}
+.logo:hover {
+    color: #a52a2a;
+}
+.ani:hover {
+    animation-name: ani;
+    animation-duration: .5s;
+}
+@keyframes ani {
+    0% {
+        border-bottom: none;
+    }
+    100% {
+        border-bottom: black 1px solid;
+    }
+}
+a:hover {
+    color: #a52a2a;
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    border-bottom: black 1px solid;
+}
+.links {
+    text-decoration: none;
+    color: #000000;
+}
+.box {
+    /* border: 1px black solid; */
+    margin: 2.35%;
+}
+#progress-bar {
+    --scrollAmount: 0%;
+    background-image: linear-gradient(to right, #f7f7f7 0%, #000000 100%);
+    width: var(--scrollAmount);
+    height: 3px;
+    position: fixed;
+    top: 0;
+  }
+.grid {
+    height: 2200px;
+    display: grid;
+    grid-template: repeat(48, 1fr) / repeat(24, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.color {
+    background-color: black;
+}
+.title1-grid {
+    position: absolute;
+    font-size: 2.1rem;
+    align-self: flex-end;
+    top: 185px;
+}
+.title {
+    font-size: 22rem;
+    grid-column: 12 / 14;
+    grid-row: 3;
+    font-family: "Mohave";
+    align-self: flex-start;
+}
+.sub-text {
+    font-size: 2.4rem;
+    position: absolute;
+    top: 660px
+}
+.number1-container {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    grid-column: 17;
+    grid-row: 4;
+    border: solid black 3px;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+}
+.number2-container {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    grid-column: 8;
+    grid-row: 11;
+    border: solid black 3px;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+}
+.number3-container {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    grid-column: 8;
+    grid-row: 13;
+    border: solid black 3px;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+}
+.number4-container {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    grid-column: 17;
+    grid-row: 15;
+    border: solid black 3px;
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+}
+.number5-container {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    grid-column: 13;
+    grid-row: 17;
+    border: solid black 3px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 3.5rem;
+}
+.text-right {
+    grid-column: 14 / 21;
+    grid-row: 5;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    text-align: left;
+}
+.text-right p{
+  font-size: 3.5rem;
+}
+.text-right2 {
+    grid-column: 14 / 21;
+    grid-row: 16;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    text-align: left;
+}
+.text-right2 p{
+  font-size: 3.5rem;
+}
+.text-right3 {
+    grid-column: 14 / 21;
+    grid-row: 18;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    text-align: left;
+}
+.text-left1 {
+    grid-column: 5 / 12;
+    grid-row: 12;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    text-align: right;
+}
+.text-left1 p{
+  font-size: 3.5rem;
+}
+.text-left2 {
+    grid-column: 5 / 12;
+    grid-row: 14;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    text-align: right;
+}
+.text-left2 p {
+  font-size: 3.5rem;
+}
+p {
+    padding-bottom: 22px;
+    font-family: "Roboto";
+}
+.mid-text {
+    grid-column: 11 / 15;
+    grid-row: 8;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+h1 {
+    text-align: center;
+    margin-top: 6%;
+    font-family: "Mohave", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 55px;
+}
+h2 {
+    font-size: 2.09rem;
+    padding-bottom: 22px;
+    font-family: "Merriweather";
+    text-decoration: underline;
+}
